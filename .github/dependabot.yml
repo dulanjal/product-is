@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.wso2.carbon.identity.outbound.auth.saml2:org.wso2.carbon.identity.application.authenticator.samlsso
+    versions:
+    - 5.3.20
+  - dependency-name: org.wso2.carbon.identity.local.auth.fido:org.wso2.carbon.identity.application.authenticator.fido
+    versions:
+    - 5.2.9
